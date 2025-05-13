@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak Heha Sky</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Kontak</title>
   <script>
     function kirimPesan() {
-      alert("Pesan Anda terkirim!");
+      alert("✅ Pesan anda terkirim!");
     }
   </script>
 </head>
 <body>
-  <header>
-    <h1>Heha Sky</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="about.html">Tentang</a></li>
-        <li><a href="features.html">Fitur</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
-    </nav>
+  <header style="background-color:#219ebc; color:white; padding:20px; text-align:center;">
+    <h1>Kontak Kami</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>Formulir Pendaftaran</h2>
-      <form onsubmit="kirimPesan(); return false;">
-        <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
+  <nav style="background-color:#023047; text-align:center; padding:10px;">
+    <a href="index.html" style="color:white; margin: 0 15px;">Beranda</a>
+    <a href="about.html" style="color:white; margin: 0 15px;">About</a>
+    <a href="features.html" style="color:white; margin: 0 15px;">Fitur</a>
+    <a href="contact.html" style="color:white; margin: 0 15px;">Kontak</a>
+  </nav>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+  <section style="padding: 20px;">
+    <h2>Formulir Pendaftaran</h2>
+    <form onsubmit="kirimPesan(); return false;">
+      <label>Nama:</label><br />
+      <input type="text" required /><br /><br />
 
-        <label for="minat">Minat Belajar atau Kunjungan:</label><br>
-        <input type="text" id="minat" name="minat"><br><br>
+      <label>Email:</label><br />
+      <input type="email" required /><br /><br />
 
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
-  </main>
+      <label>Minat Belajar:</label><br />
+      <input type="text" required /><br /><br />
 
-  <footer>
-    <p>&copy; 2025 Heha Sky - All Rights Reserved</p>
-  </footer>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
 </body>
 </html>
