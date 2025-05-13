@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Heha Sky</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function kirimPesan() {
+      alert("Pesan Anda terkirim!");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Heha Sky</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulir Pendaftaran</h2>
+      <form onsubmit="kirimPesan(); return false;">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="minat">Minat Belajar atau Kunjungan:</label><br>
+        <input type="text" id="minat" name="minat"><br><br>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Heha Sky - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
